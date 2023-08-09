@@ -1,0 +1,243 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: 'droid';
+    src: url('idroid.otf') format('opentype');
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: 'bebas';
+    src: url('bebas.ttf') format('truetype');
+}
+
+:root {
+    --cor0: #c5ebd6;
+    --cor1: #83e1ad;
+    --cor2: #3ddc84;
+    --cor3: #2fa866;
+    --cor4: #1a5c37;
+    --cor5: #063d1e;
+
+    --font-padrao: Arial, Verdana, Helvetica, sans-serif;
+    --font-destaque: 'bebas', sans-serif;
+    --font-android: 'droid', sans-serif;
+}
+
+header {
+    background-image: linear-gradient(to bottom, var(--cor3), var(--cor5));
+    text-align: center;
+    font-family: var(--font-destaque);
+    color: white;
+    padding: 10px;
+    margin:auto;
+    min-height: 150px;
+
+}
+
+header > h1 {
+    font-family: var(--font-destaque);
+    font-size: 3em;
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.267);
+}
+
+header > p {
+    font-family: var(--font-padrao);
+    font-size: 1.1em;
+    max-width: 600px;
+    min-width: 400px;
+    margin: auto;
+    text-align: center;
+    padding-left: 10px;
+    padding-right: 10px;
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.267);
+}
+
+nav {    
+    text-align: left;
+    padding-top: 23px;
+
+}
+
+nav > a {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    text-decoration: none;
+    color: var(--cor1);
+    margin-left: 10px;
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.267);
+    transition-duration: .4s;
+}
+
+nav > a:hover {
+    background-color: var(--cor3);
+    color: var(--cor5);
+    padding: 5px;
+    border-radius: 5px;
+    
+}
+
+
+body {
+    background-color:#84E1AD;
+    font-family: var(--font-padrao);
+    margin: 0px;
+}
+
+main {
+    background-color: white;
+    margin: 0px auto;
+    width:auto;
+    max-width: 800px;
+    min-height: 280px;
+    padding: 0px 15px 10px 15px;
+    border-radius: 0px 0px 10px 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.486);
+}
+
+main strong {
+    color: var(--cor4);
+    font-weight: bold;
+}
+
+main a {
+    text-decoration: none;
+    background-color: #8ecfac;
+    color: #123e26;
+    padding: 1px;
+    font-weight: bold;
+}
+
+main a:hover {
+    background-color: green;
+    text-decoration: dashed;
+}
+
+main a::after {
+    content: '🔗';
+}
+
+#titulo {
+    font: normal bolder 22px 'droid';
+    color:#246341;
+    text-indent: 20px;
+    padding-top: 20px;
+    margin: 0px;
+    width: auto;
+    
+}
+
+#video {
+    background-color: rgb(0, 66, 0);
+    padding: 30px;
+    margin: 10px -15px;
+}
+
+div {
+    text-align: center;
+    
+}
+
+.video-flex { 
+    position: relative; 
+    padding-bottom: 56.25%; 
+    padding-top: 0px; 
+    height: 0; 
+    overflow: hidden;
+  }
+  
+  .video-flex iframe, .video-flex object, .video-flex embed {
+    position: absolute; 
+    top: 0; 
+    left: 0; 
+    width: 100%; 
+    height: 100%;
+  }
+
+.sub {
+    font-family: 'droid';
+    font-size: 16px;
+    background-image: linear-gradient(to right, rgb(160, 200, 160), white);
+    color: #246341;
+    text-indent: 10px;
+    margin: 10px;
+}
+
+p {
+    font-family: var(--font-padrao);
+    font-size: 16px;
+    text-indent: 20px;
+    text-align: justify;
+    padding: 0px 10px;
+    line-height: 2em;
+}
+
+.parte3 {
+    background-color: rgb(92, 211, 92);
+    border-radius: 10px;
+    height: auto;
+    padding: 0px 10px 10px 10px;
+}
+
+.especial {
+    text-decoration: none;
+    color: #123e26;
+    padding: 1px;
+    font-weight: bold;
+}
+
+.especial::after {
+    content: '🔗';
+}
+
+.tabela1 {
+    list-style: none;
+    padding: 0px;
+    columns: 2;
+    
+}
+
+li::before {
+    content: '✔️ ';
+}
+
+h3 {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #195936;
+    color: white;
+    padding: 10px;
+    border-radius: 10px 10px 0px 0px;
+    margin: 0px -10px;
+}
+
+img {
+    margin: auto;
+    width: 100%;
+}
+
+.img-pq {
+    max-width: 350px;
+    display: block;
+    margin: auto;
+}
+
+footer {
+    background-color: var(--cor5);
+    text-align: center;
+    font-family: var(--font-padrao);
+    color: white;
+    margin: auto;
+    width: auto;
+    padding-bottom: 1px;
+}
+
+footer p {
+    padding-top: 15px;
+    text-align: center;
+    
+}
+
+footer a {
+    text-decoration: none;
+    color: #fff;
+}
