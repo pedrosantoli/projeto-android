@@ -39,6 +39,7 @@ header > h1 {
     font-family: var(--font-destaque);
     font-size: 3em;
     text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.267);
+    margin-bottom: 10px;
 }
 
 header > p {
